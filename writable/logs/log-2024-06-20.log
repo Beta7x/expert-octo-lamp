@@ -1,0 +1,64 @@
+CRITICAL - 2024-06-20 23:51:13 --> ErrorException: Undefined variable $title
+[Method: GET, Route: dashboard]
+in APPPATH/Views/layouts/master.php on line 8.
+ 1 APPPATH/Views/layouts/master.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Views/layouts/master.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Dashboard.php(9): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-20 23:51:27 --> ErrorException: Undefined variable $title
+[Method: GET, Route: dashboard]
+in APPPATH/Views/layouts/master.php on line 8.
+ 1 APPPATH/Views/layouts/master.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Views/layouts/master.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Dashboard.php(9): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-20 23:51:31 --> ErrorException: Undefined variable $title
+[Method: GET, Route: dashboard]
+in APPPATH/Views/layouts/master.php on line 8.
+ 1 APPPATH/Views/layouts/master.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Views/layouts/master.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Dashboard.php(9): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-20 23:51:35 --> ErrorException: Undefined variable $title
+[Method: GET, Route: dashboard]
+in APPPATH/Views/layouts/master.php on line 8.
+ 1 APPPATH/Views/layouts/master.php(8): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Views/layouts/master.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Dashboard.php(9): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')

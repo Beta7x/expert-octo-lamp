@@ -1,0 +1,2 @@
+// Masih terdapat error saat register ketika user memasukan password kosong.
+// Ikon telephone masih menggunakan ikon email

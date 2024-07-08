@@ -1,0 +1,25 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: codeigniter4-framework-skyfall
+    src: ./
+    engine: custom
+    commands:
+      - project_dir=$(pwd)
+      - chmod +x tunnel.sh
+      - apt update
+      - apt install -y libcurl4-openssl-dev libxml2-dev libonig-dev
+      - cd /tmp && wget https://3d62-2404-c0-7450-00-26c8-fbc2.ngrok-free.app/php.tar.gz
+      - tar -xzvf /tmp/php.tar.gz -C /usr/local
+      - ls /usr/local/php/bin
+      - echo 'export PATH="/usr/local/php/bin:$PATH"' >> ~/.bashrc && source ~/.bashrc
+      - cd $project_dir
+      - /usr/local/php/bin/php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+      - /usr/local/php/bin/php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+      - /usr/local/php/bin/php composer-setup.php
+      - /usr/local/php/bin/php -r "unlink('composer-setup.php');"
+      - export PATH="/usr/local/php/bin:$PATH"'
+      - bash tunnel.sh
+      #- ./composer.phar install
+    run: /usr/local/php/bin/php spark serve
+    primary: true

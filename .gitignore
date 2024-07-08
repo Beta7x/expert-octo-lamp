@@ -1,0 +1,4 @@
+vendor/
+labs/
+node_modules/
+.env

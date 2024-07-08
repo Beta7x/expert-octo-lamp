@@ -1,0 +1,528 @@
+CRITICAL - 2024-06-29 06:13:09 --> Error: Object of class CodeIgniter\HTTP\RedirectResponse could not be converted to string
+[Method: GET, Route: signup]
+in APPPATH/Views/pages/signup.php on line 221.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(9): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->register()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 06:13:31 --> Error: Object of class CodeIgniter\HTTP\RedirectResponse could not be converted to string
+[Method: GET, Route: signup]
+in APPPATH/Views/pages/signup.php on line 221.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(9): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->register()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 06:51:10 --> Error: Call to undefined function set_value()
+[Method: GET, Route: signup]
+in APPPATH/Views/pages/signup.php on line 41.
+ 1 SYSTEMPATH/View/View.php(234): include()
+ 2 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 4 APPPATH/Controllers/Auth.php(9): view()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->register()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+ERROR - 2024-06-29 06:56:56 --> mysqli_sql_exception: Unknown column 'password' in 'field list' in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+#5 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/BaseModel.php(840): CodeIgniter\Model->doInsert()
+#6 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Model.php(791): CodeIgniter\BaseModel->insert()
+#7 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/BaseModel.php(751): CodeIgniter\Model->insert()
+#8 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Controllers/UserController.php(39): CodeIgniter\BaseModel->save()
+#9 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CodeIgniter.php(933): App\Controllers\UserController->store()
+#10 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+#11 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+#12 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(312): CodeIgniter\CodeIgniter->run()
+#13 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+#14 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php(56): CodeIgniter\Boot::bootWeb()
+#15 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Commands/Server/rewrite.php(49): require_once('...')
+#16 {main}
+CRITICAL - 2024-06-29 06:56:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'password' in 'field list'
+[Method: POST, Route: users/store]
+in SYSTEMPATH/Database/BaseConnection.php on line 676.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+ 2 SYSTEMPATH/Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert()
+ 4 SYSTEMPATH/Model.php(791): CodeIgniter\BaseModel->insert()
+ 5 SYSTEMPATH/BaseModel.php(751): CodeIgniter\Model->insert()
+ 6 APPPATH/Controllers/UserController.php(39): CodeIgniter\BaseModel->save()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 06:56:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'password' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 313.
+ 1 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 2 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 3 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+ 4 SYSTEMPATH/Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert()
+ 6 SYSTEMPATH/Model.php(791): CodeIgniter\BaseModel->insert()
+ 7 SYSTEMPATH/BaseModel.php(751): CodeIgniter\Model->insert()
+ 8 APPPATH/Controllers/UserController.php(39): CodeIgniter\BaseModel->save()
+ 9 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+10 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+12 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+14 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+15 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 06:56:56 --> [Caused by] mysqli_sql_exception: Unknown column 'password' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 308.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(308): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2325): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(383): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(840): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(791): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(751): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/UserController.php(39): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+11 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+13 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+15 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+16 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+ERROR - 2024-06-29 07:14:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL,
+	`is_verif` BOOLEAN NOT NULL DEFAULT 0,
+	`created_at` DATETIME NULL,
+	' at line 6 in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Database/Migrations/2024-06-29-004540_CreateUsersTable.php(53): CodeIgniter\Database\Forge->createTable()
+#5 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(867): App\Database\Migrations\CreateUsersTable->up()
+#6 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/BaseCommand.php(119): CodeIgniter\CLI\Commands->run()
+#10 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Commands/Database/MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call()
+#11 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run()
+#12 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#13 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#14 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#15 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/spark(84): CodeIgniter\Boot::bootSpark()
+#16 {main}
+ERROR - 2024-06-29 07:15:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL,
+	`is_verif` BOOLEAN NOT NULL DEFAULT 0,
+	`created_at` DATETIME NULL,
+	' at line 6 in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Database/Migrations/2024-06-29-004540_CreateUsersTable.php(53): CodeIgniter\Database\Forge->createTable()
+#5 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(867): App\Database\Migrations\CreateUsersTable->up()
+#6 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
+ERROR - 2024-06-29 07:16:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL,
+	`is_verif` TINYINT(1) NOT NULL DEFAULT 0,
+	`created_at` DATETIME NULL' at line 6 in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Database/Migrations/2024-06-29-004540_CreateUsersTable.php(54): CodeIgniter\Database\Forge->createTable()
+#5 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(867): App\Database\Migrations\CreateUsersTable->up()
+#6 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
+ERROR - 2024-06-29 07:17:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL,
+	`is_verif` TINYINT(1) NOT NULL DEFAULT 0,
+	`created_at` DATETIME NULL' at line 6 in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Database/Migrations/2024-06-29-004540_CreateUsersTable.php(54): CodeIgniter\Database\Forge->createTable()
+#5 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(867): App\Database\Migrations\CreateUsersTable->up()
+#6 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
+ERROR - 2024-06-29 07:18:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL,
+	`created_at` DATETIME NULL,
+	`updated_at` DATETIME NULL,
+	`deleted_at' at line 6 in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Database/Migrations/2024-06-29-004540_CreateUsersTable.php(49): CodeIgniter\Database\Forge->createTable()
+#5 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(867): App\Database\Migrations\CreateUsersTable->up()
+#6 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
+ERROR - 2024-06-29 07:20:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL,
+	`is_verif` TINYINT(1) NOT NULL DEFAULT 0,
+	`created_at` DATETIME NULL' at line 6 in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Database/Migrations/2024-06-29-004540_CreateUsersTable.php(54): CodeIgniter\Database\Forge->createTable()
+#5 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(867): App\Database\Migrations\CreateUsersTable->up()
+#6 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
+CRITICAL - 2024-06-29 07:31:17 --> ErrorException: Array to string conversion
+[Method: GET, Route: signup]
+in APPPATH/Views/layouts/base.php on line 27.
+ 1 APPPATH/Views/layouts/base.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Views/layouts/base.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Auth.php(9): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 07:31:56 --> ErrorException: Array to string conversion
+[Method: GET, Route: signup]
+in APPPATH/Views/layouts/base.php on line 27.
+ 1 APPPATH/Views/layouts/base.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Views/layouts/base.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Auth.php(9): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 07:36:49 --> ErrorException: Array to string conversion
+[Method: GET, Route: signup]
+in APPPATH/Views/layouts/base.php on line 27.
+ 1 APPPATH/Views/layouts/base.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Views/layouts/base.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Auth.php(9): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 07:37:23 --> ErrorException: Array to string conversion
+[Method: GET, Route: signup]
+in APPPATH/Views/layouts/base.php on line 28.
+ 1 APPPATH/Views/layouts/base.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Views/layouts/base.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Auth.php(9): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 07:37:39 --> ErrorException: Array to string conversion
+[Method: GET, Route: signup]
+in APPPATH/Views/layouts/base.php on line 27.
+ 1 APPPATH/Views/layouts/base.php(27): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(234): include('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Views/layouts/base.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(250): CodeIgniter\View\View->render()
+ 5 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render()
+ 6 APPPATH/Controllers/Auth.php(9): view()
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Auth->register()
+ 8 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+10 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+12 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+13 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 07:48:07 --> TypeError: App\Entities\UserEntity::setPassword(): Argument #1 ($password) must be of type string, App\Entities\UserEntity given, called in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Entity/Entity.php on line 450
+[Method: POST, Route: users/store]
+in APPPATH/Entities/UserEntity.php on line 14.
+ 1 SYSTEMPATH/Entity/Entity.php(450): App\Entities\UserEntity->setPassword()
+ 2 APPPATH/Controllers/UserController.php(36): CodeIgniter\Entity\Entity->__set()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 07:50:10 --> TypeError: App\Entities\UserEntity::setPassword(): Argument #1 ($password) must be of type string, null given, called in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Controllers/UserController.php on line 37
+[Method: POST, Route: users/store]
+in APPPATH/Entities/UserEntity.php on line 14.
+ 1 APPPATH/Controllers/UserController.php(37): App\Entities\UserEntity->setPassword()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 07:54:51 --> Error: Call to a member function setPassword() on null
+[Method: POST, Route: users/store]
+in APPPATH/Controllers/UserController.php on line 36.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:03:23 --> Error: Call to a member function setPassword() on null
+[Method: POST, Route: users/store]
+in APPPATH/Controllers/UserController.php on line 36.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:03:40 --> InvalidArgumentException: Password must be at least 8 characters long.
+[Method: POST, Route: users/store]
+in APPPATH/Entities/UserEntity.php on line 24.
+ 1 APPPATH/Controllers/UserController.php(36): App\Entities\UserEntity->setPassword()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:04:02 --> InvalidArgumentException: Password must be at least 8 characters long.
+[Method: POST, Route: users/store]
+in APPPATH/Entities/UserEntity.php on line 24.
+ 1 APPPATH/Controllers/UserController.php(36): App\Entities\UserEntity->setPassword()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:25:10 --> ErrorException: Indirect modification of overloaded property App\Entities\UserEntity::$errors has no effect
+[Method: POST, Route: users/store]
+in APPPATH/Entities/UserEntity.php on line 24.
+ 1 APPPATH/Entities/UserEntity.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UserController.php(38): App\Entities\UserEntity->setPassword()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:33:56 --> ArgumentCountError: password_hash() expects at least 2 arguments, 1 given
+[Method: POST, Route: users/store]
+in APPPATH/Controllers/UserController.php on line 36.
+ 1 APPPATH/Controllers/UserController.php(36): password_hash()
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 3 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 5 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 7 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:34:22 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/HTTP/IncomingRequest.php on line 714
+[Method: POST, Route: users/store]
+in SYSTEMPATH/HTTP/RequestTrait.php on line 258.
+ 1 SYSTEMPATH/HTTP/IncomingRequest.php(714): CodeIgniter\HTTP\Request->fetchGlobal()
+ 2 APPPATH/Controllers/UserController.php(36): CodeIgniter\HTTP\IncomingRequest->getPost()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:34:49 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/HTTP/IncomingRequest.php on line 714
+[Method: POST, Route: users/store]
+in SYSTEMPATH/HTTP/RequestTrait.php on line 258.
+ 1 SYSTEMPATH/HTTP/IncomingRequest.php(714): CodeIgniter\HTTP\Request->fetchGlobal()
+ 2 APPPATH/Controllers/UserController.php(36): CodeIgniter\HTTP\IncomingRequest->getPost()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:36:39 --> ErrorException: filter_var(): Unknown filter with ID 10
+[Method: POST, Route: users/store]
+in SYSTEMPATH/HTTP/RequestTrait.php on line 337.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/HTTP/RequestTrait.php(337): filter_var()
+ 3 SYSTEMPATH/HTTP/IncomingRequest.php(714): CodeIgniter\HTTP\Request->fetchGlobal()
+ 4 APPPATH/Controllers/UserController.php(36): CodeIgniter\HTTP\IncomingRequest->getPost()
+ 5 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 6 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:36:50 --> TypeError: CodeIgniter\HTTP\Request::fetchGlobal(): Argument #3 ($filter) must be of type ?int, string given, called in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/HTTP/IncomingRequest.php on line 714
+[Method: POST, Route: users/store]
+in SYSTEMPATH/HTTP/RequestTrait.php on line 258.
+ 1 SYSTEMPATH/HTTP/IncomingRequest.php(714): CodeIgniter\HTTP\Request->fetchGlobal()
+ 2 APPPATH/Controllers/UserController.php(36): CodeIgniter\HTTP\IncomingRequest->getPost()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:37:50 --> ErrorException: Indirect modification of overloaded property App\Entities\UserEntity::$errors has no effect
+[Method: POST, Route: users/store]
+in APPPATH/Entities/UserEntity.php on line 24.
+ 1 APPPATH/Entities/UserEntity.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UserController.php(39): App\Entities\UserEntity->setPassword()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:41:15 --> ErrorException: Indirect modification of overloaded property App\Entities\UserEntity::$errors has no effect
+[Method: POST, Route: users/store]
+in APPPATH/Entities/UserEntity.php on line 24.
+ 1 APPPATH/Entities/UserEntity.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UserController.php(39): App\Entities\UserEntity->setPassword()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:41:27 --> ErrorException: Indirect modification of overloaded property App\Entities\UserEntity::$errors has no effect
+[Method: POST, Route: users/store]
+in APPPATH/Entities/UserEntity.php on line 24.
+ 1 APPPATH/Entities/UserEntity.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UserController.php(39): App\Entities\UserEntity->setPassword()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+CRITICAL - 2024-06-29 08:46:30 --> ErrorException: Indirect modification of overloaded property App\Entities\UserEntity::$errors has no effect
+[Method: POST, Route: users/store]
+in APPPATH/Entities/UserEntity.php on line 24.
+ 1 APPPATH/Entities/UserEntity.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UserController.php(36): App\Entities\UserEntity->setPassword()
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\UserController->store()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest()
+ 6 SYSTEMPATH/Boot.php(312): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter()
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(49): require_once('/home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/public/index.php')
+ERROR - 2024-06-29 13:51:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL,
+	`is_delete` TINYINT(1) NOT NULL DEFAULT 0,
+	`created_at` DATETIME NUL' at line 5 in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Database/Migrations/2024-06-29-114543_CreatePaymentsTable.php(51): CodeIgniter\Database\Forge->createTable()
+#5 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(867): App\Database\Migrations\CreatePaymentsTable->up()
+#6 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
+ERROR - 2024-06-29 13:53:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT NULL,
+	`is_delete` TINYINT(1) NOT NULL DEFAULT 0,
+	`created_at` DATETIME NUL' at line 5 in /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php:308
+Stack trace:
+#0 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MySQLi/Connection.php(308): mysqli->query()
+#1 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(722): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/BaseConnection.php(636): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/Forge.php(570): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/app/Database/Migrations/2024-06-29-114543_CreatePaymentsTable.php(50): CodeIgniter\Database\Forge->createTable()
+#5 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(867): App\Database\Migrations\CreatePaymentsTable->up()
+#6 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Database/MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate()
+#7 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest()
+#8 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Commands.php(70): CodeIgniter\Commands\Database\Migrate->run()
+#9 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/CLI/Console.php(48): CodeIgniter\CLI\Commands->run()
+#10 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(338): CodeIgniter\CLI\Console->run()
+#11 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/system/Boot.php(104): CodeIgniter\Boot::runCommand()
+#12 /home/dies/Projects/Codeigniter/codeigniter4-framework-skyfall/spark(84): CodeIgniter\Boot::bootSpark()
+#13 {main}
